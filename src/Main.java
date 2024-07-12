@@ -50,6 +50,25 @@ public class Main {
         int wheitEgg = 70;
         float wheitBreakfast = (bananas * wheitBanan + milk * wheitMilk + icecream * wheitIcecream + egg * wheitEgg) / 1000;
         System.out.println("Общий вес спортизавтрака " + wheitBreakfast + " килограмм");
-
+        //7
+        float targetWheit  = 7.0f;
+        float lostWheit1 = 0.25f;
+        float lostWheit2 = 0.5f;
+        float lostDay1 = targetWheit/lostWheit1;
+        float lostDay2 = targetWheit/lostWheit2;
+        float lostDayAvg = (lostDay1 + lostDay2) / 2;
+        System.out.println("Если диета " + lostWheit1 + " кг в день, то потребуется " + lostDay1 + " дней");
+        System.out.println("Если диета " + lostWheit2 + " кг в день, то потребуется " + lostDay2 + " дней");
+        System.out.println("ЕИли в среднем потребуется " + lostDayAvg + " дней");
+        //8
+        float targetWheit  = 7.0f;
+        float lostWheit1 = 0.25f;
+        float lostWheit2 = 0.5f;
+        float lostDay1 = targetWheit/lostWheit1;
+        float lostDay2 = targetWheit/lostWheit2;
+        float lostDayAvg = (lostDay1 + lostDay2) / 2;
+        System.out.println("Если диета " + lostWheit1 + " кг в день, то потребуется " + lostDay1 + " дней");
+        System.out.println("Если диета " + lostWheit2 + " кг в день, то потребуется " + lostDay2 + " дней");
+        System.out.println("ЕИли в среднем потребуется " + lostDayAvg + " дней");
     }
 }
