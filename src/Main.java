@@ -61,14 +61,18 @@ public class Main {
         System.out.println("Если диета " + lostWheit2 + " кг в день, то потребуется " + lostDay2 + " дней");
         System.out.println("ЕИли в среднем потребуется " + lostDayAvg + " дней");
         //8
-        float targetWheit  = 7.0f;
-        float lostWheit1 = 0.25f;
-        float lostWheit2 = 0.5f;
-        float lostDay1 = targetWheit/lostWheit1;
-        float lostDay2 = targetWheit/lostWheit2;
-        float lostDayAvg = (lostDay1 + lostDay2) / 2;
-        System.out.println("Если диета " + lostWheit1 + " кг в день, то потребуется " + lostDay1 + " дней");
-        System.out.println("Если диета " + lostWheit2 + " кг в день, то потребуется " + lostDay2 + " дней");
-        System.out.println("ЕИли в среднем потребуется " + lostDayAvg + " дней");
+        float salaryMasha  = 67760f;
+        float salaryDenis = 83690f;
+        float salaryKris = 76230f;
+        float growSalary = 0.1f;
+        float salsryGrowYearMashsa = salaryMasha * 12 * growSalary;
+        float salsryGrowYearDenis = salaryDenis * 12 * growSalary;
+        float salsryGrowYearKris = salaryKris * 12 * growSalary;
+        float salsryYearMashsa = salaryMasha * 12 + salsryGrowYearMashsa;
+        float salsryYearDenis = salaryDenis * 12 + salsryGrowYearDenis;
+        float salsryYearKris = salaryKris * 12 + salsryGrowYearKris;
+        System.out.println("Маша теперь получает " + salsryYearMashsa + " рублей. Годовой доход вырос на " + salsryGrowYearMashsa + " рублей");
+        System.out.println("Денис теперь получает " + salsryYearDenis + " рублей. Годовой доход вырос на " + salsryGrowYearDenis + " рублей");
+        System.out.println("Кристина теперь получает " + salsryYearKris + " рублей. Годовой доход вырос на " + salsryGrowYearKris + " рублей");
     }
 }
