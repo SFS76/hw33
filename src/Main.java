@@ -21,7 +21,7 @@ public class Main {
         byte annSer = 27;
         byte ekaAnd = 30;
         int paper = 480;
-        float paperPerOne = (float) (ludPal + annSer + ekaAnd) / paper;
+        int paperPerOne = Math.round (paper / (ludPal + annSer + ekaAnd));
         System.out.println("На каждого ученика рассчитано " + paperPerOne + " листов бумаги");
         //4
         byte efficiencyPerTwoMinutes  = 16;
@@ -43,7 +43,7 @@ public class Main {
         byte bananas  = 5;
         int wheitBanan = 80;
         int milk  = 200;
-        float wheitMilk = 105 / 100;
+        float wheitMilk = 105f / 100;
         byte icecream  = 2;
         int wheitIcecream = 100;
         byte egg  = 4;
@@ -68,9 +68,9 @@ public class Main {
         float salsryGrowYearMashsa = salaryMasha * 12 * growSalary;
         float salsryGrowYearDenis = salaryDenis * 12 * growSalary;
         float salsryGrowYearKris = salaryKris * 12 * growSalary;
-        float salsryYearMashsa = salaryMasha * 12 + salsryGrowYearMashsa;
-        float salsryYearDenis = salaryDenis * 12 + salsryGrowYearDenis;
-        float salsryYearKris = salaryKris * 12 + salsryGrowYearKris;
+        int salsryYearMashsa = Math.round (salaryMasha * 12 + salsryGrowYearMashsa);
+        int salsryYearDenis = Math.round (salaryDenis * 12 + salsryGrowYearDenis);
+        int salsryYearKris = Math.round (salaryKris * 12 + salsryGrowYearKris);
         System.out.println("Маша теперь получает " + salsryYearMashsa + " рублей. Годовой доход вырос на " + salsryGrowYearMashsa + " рублей");
         System.out.println("Денис теперь получает " + salsryYearDenis + " рублей. Годовой доход вырос на " + salsryGrowYearDenis + " рублей");
         System.out.println("Кристина теперь получает " + salsryYearKris + " рублей. Годовой доход вырос на " + salsryGrowYearKris + " рублей");
